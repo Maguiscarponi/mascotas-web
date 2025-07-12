@@ -16,72 +16,72 @@ include '../config/database.php';
     </div>
 <?php endif; ?>
 
-<!-- Banner principal -->
-<div class="seccion-hero-principal">
-    <img src="/mascotas/uploads/portada.jpg" alt="Portada Adoptame Saladillo" class="imagen-hero-principal">
-    <div class="texto-hero-principal">
+<!-- Banner principal con imagen de fondo -->
+<div class="hero-section">
+    <img src="/mascotas/uploads/portada.jpg" alt="Portada Adoptame Saladillo" class="hero-image">
+    <div class="hero-text">
         <h1>Bienvenidos a Adoptame Saladillo</h1>
         <p>¡Encontrá a tu compañero perfecto, o ayudá a una mascota a encontrar su hogar!</p>
     </div>
 </div>
 
-<!-- Tarjetas de servicios -->
+<!-- Tarjetas de servicios principales -->
 <div class="container mb-5">
     <div class="row g-4">
         
         <!-- Primera fila: 3 tarjetas -->
         <div class="col-md-4">
-            <div class="tarjeta-base tarjeta-servicio-adopcion">
-                <div class="cuerpo-tarjeta">
+            <div class="card card-donacion-personalizada tarjeta-adopcion">
+                <div class="card-body">
                     <i class="fas fa-paw icono-tarjeta"></i>
-                    <h3 class="titulo-servicio-inicio">Mascotas en Adopción</h3>
-                    <p class="descripcion-servicio-inicio">Encontrá a tu próximo compañero y dale un hogar lleno de amor.</p>
-                    <a href="mascotas_adopcion.php" class="btn boton-tarjeta-inicio">Ver mascotas</a>
+                    <h3 class="mb-3">Mascotas en Adopción</h3>
+                    <p class="texto-tarjeta">Encontrá a tu próximo compañero y dale un hogar lleno de amor.</p>
+                    <a href="mascotas_adopcion.php" class="btn btn-tarjeta-inicio">Ver mascotas</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4">
-            <div class="tarjeta-base h-100 tarjeta-servicio-transito">
-                <div class="cuerpo-tarjeta">
+            <div class="card card-donacion-personalizada tarjeta-transito">
+                <div class="card-body">
                     <i class="fas fa-home icono-tarjeta"></i>
-                    <h3 class="titulo-servicio-inicio">Mascotas en Tránsito</h3>
-                    <p class="descripcion-servicio-inicio">Ayudá temporalmente a una mascota mientras encuentra su hogar definitivo.</p>
-                    <a href="mascotas_transito.php" class="btn boton-tarjeta-inicio">Ver mascotas</a>
+                    <h3 class="mb-3">Mascotas en Tránsito</h3>
+                    <p class="texto-tarjeta">Ayudá temporalmente a una mascota mientras encuentra su hogar definitivo.</p>
+                    <a href="mascotas_transito.php" class="btn btn-tarjeta-inicio">Ver mascotas</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4">
-            <div class="tarjeta-base h-100 tarjeta-servicio-perdidas">
-                <div class="cuerpo-tarjeta">
+            <div class="card card-donacion-personalizada tarjeta-perdidas">
+                <div class="card-body">
                     <i class="fas fa-search icono-tarjeta"></i>
-                    <h3 class="titulo-servicio-inicio">Mascotas Perdidas</h3>
-                    <p class="descripcion-servicio-inicio">Ayudanos a reunir mascotas perdidas con sus familias.</p>
-                    <a href="mascotas_perdidas.php" class="btn boton-tarjeta-inicio">Ver mascotas</a>
+                    <h3 class="mb-3">Mascotas Perdidas</h3>
+                    <p class="texto-tarjeta">Ayudanos a reunir mascotas perdidas con sus familias.</p>
+                    <a href="mascotas_perdidas.php" class="btn btn-tarjeta-inicio">Ver mascotas</a>
                 </div>
             </div>
         </div>
 
         <!-- Segunda fila: 2 tarjetas centradas -->
         <div class="col-md-6">
-            <div class="tarjeta-base h-100 tarjeta-servicio-reportar">
-                <div class="cuerpo-tarjeta">
+            <div class="card card-donacion-personalizada tarjeta-reportar">
+                <div class="card-body">
                     <i class="fas fa-bullhorn icono-tarjeta"></i>
-                    <h3 class="titulo-servicio-inicio">Reportar Mascota</h3>
-                    <p class="descripcion-servicio-inicio">¿Encontraste o perdiste una mascota? Reportala acá y te ayudamos a difundir.</p>
-                    <a href="mascotas_perdidas.php" onclick="iniciarChat(); return false;" class="btn boton-tarjeta-inicio">Reportar</a>
+                    <h3 class="mb-3">Reportar Mascota</h3>
+                    <p class="texto-tarjeta">¿Encontraste o perdiste una mascota? Reportala acá y te ayudamos a difundir.</p>
+                    <a href="mascotas_perdidas.php" onclick="iniciarChat(); return false;" class="btn btn-tarjeta-inicio">Reportar</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-6">
-            <div class="tarjeta-base h-100 tarjeta-servicio-donacion">
-                <div class="cuerpo-tarjeta">
+            <div class="card card-donacion-personalizada tarjeta-donacion">
+                <div class="card-body">
                     <i class="fas fa-heart icono-tarjeta"></i>
-                    <h3 class="titulo-servicio-inicio">Realizar Donación</h3>
-                    <p class="descripcion-servicio-inicio">Tu ayuda es fundamental para continuar con nuestra labor de rescate y cuidado.</p>
-                    <a href="realizar_donacion.php" class="btn boton-tarjeta-inicio">Donar</a>
+                    <h3 class="mb-3">Realizar Donación</h3>
+                    <p class="texto-tarjeta">Tu ayuda es fundamental para continuar con nuestra labor de rescate y cuidado.</p>
+                    <a href="realizar_donacion.php" class="btn btn-tarjeta-inicio">Donar</a>
                 </div>
             </div>
         </div>
