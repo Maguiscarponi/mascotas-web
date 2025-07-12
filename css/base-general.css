@@ -1,0 +1,52 @@
+/* ====================================================
+   ESTILOS BASE GENERALES
+   Configuración básica del sitio
+   ==================================================== */
+
+/* Configuración general del body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    padding: 20px 0;
+}
+
+/* Contenido principal (para admin) */
+.contenido-principal {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Overlay para menú móvil */
+.overlay-menu-movil {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1020;
+}
+
+.overlay-menu-movil.activo {
+    display: block;
+}
+
+/* Espaciado general */
+.margen-superior {
+    margin-top: 20px;
+}
+
+.margen-inferior {
+    margin-bottom: 20px;
+}
+
+.padding-general {
+    padding: 15px;
+}

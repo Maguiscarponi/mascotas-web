@@ -1,0 +1,16 @@
+/* ====================================================
+   ESTILOS PRINCIPALES - ADOPTAME SALADILLO
+   Archivo principal que importa todos los estilos
+   ==================================================== */
+
+/* Importar todos los archivos de estilos */
+@import url('base-general.css');
+@import url('navegacion-header.css');
+@import url('sidebar-admin.css');
+@import url('botones-acciones.css');
+@import url('tarjetas-mascotas.css');
+@import url('formularios-inputs.css');
+@import url('tablas-datos.css');
+@import url('chat-mensajes.css');
+@import url('paginas-especiales.css');
+@import url('responsive-movil.css');
