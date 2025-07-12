@@ -1,25 +1,27 @@
-/* 4.3 Tablas */
+/* ====================================================
+   4.3 TABLAS DE DATOS
+   ==================================================== */
 
-.gestion-solicitudes .card{
+.contenedor-gestion-solicitudes .card {
     background-color: white;
 }
 
-.table td {
+.tabla-datos td {
     vertical-align: middle;
 }
 
-.table-solicitudes {
+.tabla-solicitudes {
     background-color: white;
     width: 100%;
     border-radius: 8px;
 }
 
-.table-solicitudes th {
+.tabla-solicitudes th {
     background-color: #f8f9fa;
     font-weight: 600;
     padding: 12px;
 }
 
-.table-solicitudes td {
+.tabla-solicitudes td {
     padding: 12px;
 }

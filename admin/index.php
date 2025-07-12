@@ -30,10 +30,13 @@ $result = $conn->query($sql);
 
 <?php include 'includes/sidebar.php'; ?>
 
-<div class="content">
-    <h2>Mascotas</h2>
-    <a href="registrar_mascota.php" class="btn btn-nueva">Nueva</a>
+<div class="contenido-admin">
     
+    <!-- Título y botón nueva mascota -->
+    <h2>Mascotas</h2>
+    <a href="registrar_mascota.php" class="btn boton-nueva-mascota">Nueva</a>
+    
+    <!-- Filtro por estado -->
     <form method="GET" style="margin-bottom: 15px;">
         <label for="estado">Filtrar por estado:</label>
         <select name="estado" id="estado" onchange="this.form.submit()">
@@ -45,8 +48,9 @@ $result = $conn->query($sql);
         </select>
     </form>
 
+    <!-- Tabla de mascotas -->
     <div class="table-responsive">
-        <table class="table">
+        <table class="tabla-datos table">
             <thead>
                 <tr>
                     <th>ID Mascota</th>
@@ -62,14 +66,23 @@ $result = $conn->query($sql);
                 <?php if ($result->num_rows > 0): ?>
                     <?php while($row = $result->fetch_assoc()): ?>
                         <tr>
+                            <!-- ID de la mascota -->
                             <td><?= $row["id_mascota"] ?></td>
-                            <td><img src="../<?= $row["imagen"] ?>" alt="Imagen de <?= $row["nombre"] ?>" 
-                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;"></td>
+                            
+                            <!-- Imagen de la mascota -->
+                            <td>
+                                <img src="../<?= $row["imagen"] ?>" alt="Imagen de <?= $row["nombre"] ?>" 
+                                    style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;">
+                            </td>
+                            
+                            <!-- Datos básicos -->
                             <td><?= $row["nombre"] ?></td>
                             <td><?= $row["edad"] ?></td>
                             <td><?= $row["estado"] ?></td>
+                            
+                            <!-- Botones de publicación -->
                             <td>
-                                <button class="btn btn-publicar" 
+                                <button class="btn boton-publicar-mascota" 
                                     onclick="abrirModalPublicacion(<?= $row["id_mascota"] ?>, '<?= addslashes($row["nombre"]) ?>')">
                                     Publicar
                                 </button>
@@ -79,9 +92,11 @@ $result = $conn->query($sql);
                                     Eliminar publicación
                                 </button>
                             </td>
+                            
+                            <!-- Acciones de edición -->
                             <td>
-                                <button class="btn btn-editar" onclick="editarMascota(<?= $row["id_mascota"] ?>)">Editar</button>
-                                <button class="btn btn-eliminar" onclick="eliminarMascota(<?= $row["id_mascota"] ?>)">Eliminar</button>
+                                <button class="btn boton-editar-mascota" onclick="editarMascota(<?= $row["id_mascota"] ?>)">Editar</button>
+                                <button class="btn boton-eliminar-mascota" onclick="eliminarMascota(<?= $row["id_mascota"] ?>)">Eliminar</button>
                             </td>
                         </tr>
                     <?php endwhile; ?>
@@ -91,25 +106,33 @@ $result = $conn->query($sql);
             </tbody>
         </table>
     </div>
+    
 </div>
 
 <!-- Modal de publicación -->
 <div class="modal fade" id="modalPublicacion" tabindex="-1" aria-labelledby="modalPublicacionLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
+            
+            <!-- Encabezado del modal -->
             <div class="modal-header">
                 <h5 class="modal-title" id="modalPublicacionLabel">Crear Publicación</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            
+            <!-- Contenido del modal -->
             <div class="modal-body">
                 <p>Seleccione el tipo de publicación para <span id="nombreMascota"></span>:</p>
                 <input type="hidden" id="mascotaId" value="">
+                
+                <!-- Botones de tipo de publicación -->
                 <div class="d-grid gap-2">
                     <button class="btn btn-primary mb-2" onclick="crearPublicacion('Adopción')">Mascota en Adopción</button>
                     <button class="btn btn-info mb-2" onclick="crearPublicacion('Tránsito')">Mascota en Tránsito</button>
                     <button class="btn btn-warning" onclick="crearPublicacion('Perdido')">Mascota Perdida</button>
                 </div>
             </div>
+            
         </div>
     </div>
 </div>
@@ -187,4 +210,3 @@ function eliminarPublicacion(id, btn) {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

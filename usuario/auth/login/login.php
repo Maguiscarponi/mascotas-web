@@ -60,6 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->close();
     }
 }
+
 // Si existen mensajes de sesión los recupera
 if (isset($_SESSION['error'])) {
     $error = $_SESSION['error'];
@@ -89,15 +90,21 @@ if (isset($conn) && $conn) {
 
 <body>
 
-    <div class="login-container">
-        <div class="login-image">
+    <div class="contenedor-login">
+        
+        <!-- Imagen lateral -->
+        <div class="imagen-login">
             <img src="../../../uploads/mascostasinicio.png" alt="Perro y gato" class="img-fluid w-100 h-100" style="object-fit: cover;">
         </div>
 
-        <div class="login-form">
-            <div class="login-box">
+        <!-- Formulario de login -->
+        <div class="formulario-login">
+            <div class="caja-login">
+                
+                <!-- Título -->
                 <h2 class="text-center mb-4">Inicio de Sesión</h2>
 
+                <!-- Mensajes de error y éxito -->
                 <?php if($error): ?>
                     <div class="alert alert-danger"><?php echo $error; ?></div>
                 <?php endif; ?>
@@ -106,21 +113,26 @@ if (isset($conn) && $conn) {
                     <div class="alert alert-success"><?php echo $success; ?></div>
                 <?php endif; ?>
 
+                <!-- Formulario -->
                 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
                     
+                    <!-- Campo email -->
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                        <input type="email" class="campo-formulario form-control" id="email" name="email" required>
                     </div>
 
+                    <!-- Campo contraseña -->
                     <div class="mb-3">
                         <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="password" name="password" required>
+                        <input type="password" class="campo-formulario form-control" id="password" name="password" required>
                     </div>
 
-                    <button type="submit" class="btn btn-login">Iniciar Sesión</button>
+                    <!-- Botón de envío -->
+                    <button type="submit" class="btn boton-iniciar-sesion">Iniciar Sesión</button>
 
-                    <div class="text-center mt-3 login-footer">
+                    <!-- Enlaces adicionales -->
+                    <div class="text-center mt-3 pie-login">
                         <p>¿No tenes una cuenta? <a href="../registro/registro.php">Regístrate</a></p>
                     </div>
 
@@ -128,7 +140,9 @@ if (isset($conn) && $conn) {
 
             </div>
         </div>
+        
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

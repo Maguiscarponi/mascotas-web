@@ -1,5 +1,5 @@
 /* ====================================================
-   1. GENERAL
+   1. ESTILOS GENERALES BASE
    ==================================================== */
 body {
     margin: 0;
@@ -8,18 +8,18 @@ body {
 }
 
 /* ====================================================
-   2. ESTRUCTURA BÁSICA
+   2. ESTRUCTURA BÁSICA DE LAYOUT
    ==================================================== */
-.container {
+.contenedor-principal {
     padding: 20px 0;
 }
 
-.content {
+.contenido-admin {
     margin-left: 250px;
     padding: 20px;
 }
 
-.sidebar-overlay {
+.overlay-menu-movil {
     display: none;
     position: fixed;
     top: 0;
@@ -30,6 +30,6 @@ body {
     z-index: 1020;
 }
 
-.sidebar-overlay.active {
+.overlay-menu-movil.active {
     display: block;
 }

@@ -1,119 +1,123 @@
+/* ====================================================
+   ESTILOS RESPONSIVE PARA MÓVILES
+   ==================================================== */
+
 /* Para tablets */
 @media (max-width: 991px) {
-    /* ajustes del sidebar */
-    .sidebar {
+    /* Ajustes del sidebar */
+    .menu-lateral-admin {
         display: none;
     }
 
-    .sidebar.active {
+    .menu-lateral-admin.active {
         display: block;
     }
 
-    .close-sidebar {
+    .boton-cerrar-menu {
         display: block;
     }
 
-    .mobile-menu-toggle {
+    .boton-menu-movil {
         display: block;
     }
 
-    /* ajuste del contenido principal */
-    .content {
+    /* Ajuste del contenido principal */
+    .contenido-admin {
         margin-left: 0;
         padding-top: 60px;
     }
 
-    /* ajustes de tabla */
+    /* Ajustes de tabla */
     .table-responsive {
         margin-top: 20px;
     }
 
-    .table td,
-    .table th {
+    .tabla-datos td,
+    .tabla-datos th {
         padding: 8px;
         font-size: 14px;
     }
 
-    .table .btn {
+    .tabla-datos .btn {
         padding: 5px 10px;
         font-size: 13px;
         margin: 2px;
     }
 
-    /* ajustes de botones */
-    .btn-nueva {
+    /* Ajustes de botones */
+    .boton-nueva-mascota {
         margin-bottom: 15px;
         width: 100%;
     }
 
-    /* ajustes del hero */
-    .hero-section {
+    /* Ajustes del hero */
+    .seccion-hero-principal {
         height: 300px;
     }
 
-    .hero-text h1 {
+    .texto-hero-principal h1 {
         font-size: 32px;
     }
 
-    .hero-text p {
+    .texto-hero-principal p {
         font-size: 19px;
     }
 }
 
 /* PARTE MÓVIL */
 @media (max-width: 768px) {
-    /* ajustes para pantallas medianas */
-    .hero-text h1 {
+    /* Ajustes para pantallas medianas */
+    .texto-hero-principal h1 {
         font-size: 29px;
     }
 
-    .hero-text p {
+    .texto-hero-principal p {
         font-size: 16px;
     }
 
-    .login-container {
+    .contenedor-login {
         flex-direction: column;
     }
 
-    .login-image {
+    .imagen-login {
         height: 300px;
         width: 100%;
     }
     
-    .login-form {
+    .formulario-login {
         width: 100%;
     }
 }
 
 /* Para celulares chicos */
 @media (max-width: 576px) {
-    /* ajustes para celulares */
-    .hero-section {
+    /* Ajustes para celulares */
+    .seccion-hero-principal {
         height: 250px;
     }
 
-    .hero-text {
+    .texto-hero-principal {
         padding: 10px;
     }
 
-    .hero-text h1 {
+    .texto-hero-principal h1 {
         font-size: 24px;
     }
 
-    .hero-text p {
+    .texto-hero-principal p {
         font-size: 15px;
     }
 
-    /* ajustes de tabla para celulares */
-    .table th:nth-child(2),
-    .table td:nth-child(2),
-    .table th:nth-child(4),
-    .table td:nth-child(4) {
+    /* Ajustes de tabla para celulares */
+    .tabla-datos th:nth-child(2),
+    .tabla-datos td:nth-child(2),
+    .tabla-datos th:nth-child(4),
+    .tabla-datos td:nth-child(4) {
         display: none;
     }
 
-    /* botones en tabla */
-    .table .btn {
+    /* Botones en tabla */
+    .tabla-datos .btn {
         display: block;
         width: 100%;
         margin-bottom: 5px;
@@ -129,15 +133,15 @@
         padding: 16px 12px;
     }
 
-    .detalle-mascota-imagen {
+    .imagen-detalle-mascota {
         height: 300px;
     }
 
-    .detalle-mascota-card {
+    .tarjeta-detalle-mascota {
         height: auto;
     }
 
-    .btn-donar {
+    .boton-donar {
         width: 100%;
         display: block;
         margin-top: 10px;

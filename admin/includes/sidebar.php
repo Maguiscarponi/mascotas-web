@@ -17,21 +17,25 @@ $rutaCss = str_repeat('../', $profundidad) . 'css/styles.css';
     <link href="<?= $rutaCss ?>" rel="stylesheet">
 </head>
 <body>
+    
     <!-- Botón para menú móvil -->
-    <button id="sidebarToggle" class="mobile-menu-toggle">
+    <button id="sidebarToggle" class="boton-menu-movil">
         <i class="fas fa-bars"></i>
     </button>
 
-    <!-- Menú lateral -->
-    <div id="sidebar" class="sidebar">
-        <div class="sidebar-header">
+    <!-- Menú lateral administrativo -->
+    <div id="sidebar" class="menu-lateral-admin">
+        
+        <!-- Encabezado del menú -->
+        <div class="encabezado-menu-lateral">
             <h4>Adoptame Saladillo</h4>
             <!-- Botón de cierre para móvil -->
-            <button class="close-sidebar d-md-none">
+            <button class="boton-cerrar-menu d-md-none">
                 <i class="fas fa-times"></i>
             </button>
         </div>
         
+        <!-- Información del usuario -->
         <div class="user-info mb-3">
             <?php if(isset($_SESSION['admin_nombre'])): ?>
                 <p class="mb-0">Bienvenido,</p>
@@ -39,40 +43,42 @@ $rutaCss = str_repeat('../', $profundidad) . 'css/styles.css';
             <?php endif; ?>
         </div>
         
+        <!-- Menú de navegación -->
         <div class="menu">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="/mascotas/usuario/index.php">
+                    <a class="enlace-menu-lateral d-flex align-items-center" href="/mascotas/usuario/index.php">
                         <i class="fas fa-globe me-2"></i> Web
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="/mascotas/admin/index.php">
+                    <a class="enlace-menu-lateral d-flex align-items-center" href="/mascotas/admin/index.php">
                         <i class="fas fa-paw me-2"></i> Mascotas
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="/mascotas/admin/registrar_mascota.php">
+                    <a class="enlace-menu-lateral d-flex align-items-center" href="/mascotas/admin/registrar_mascota.php">
                         <i class="fas fa-plus-circle me-2"></i> Registrar Mascotas
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="/mascotas/admin/solicitudes/index.php">
+                    <a class="enlace-menu-lateral d-flex align-items-center" href="/mascotas/admin/solicitudes/index.php">
                         <i class="fas fa-clipboard-list me-2"></i> Solicitudes
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="/mascotas/admin/chat/index.php">
+                    <a class="enlace-menu-lateral d-flex align-items-center" href="/mascotas/admin/chat/index.php">
                         <i class="fas fa-comments me-2"></i> Chats Activos
                     </a>
                 </li>
                 <li class="nav-item mt-4">
-                    <a class="nav-link d-flex align-items-center text-danger" href="/mascotas/admin/auth/logout/logout.php">
+                    <a class="enlace-menu-lateral d-flex align-items-center text-danger" href="/mascotas/admin/auth/logout/logout.php">
                         <i class="fas fa-sign-out-alt me-2"></i> Cerrar Sesión
                     </a>
                 </li>
             </ul>
         </div>
+        
     </div>
 
     <script>
@@ -80,11 +86,11 @@ $rutaCss = str_repeat('../', $profundidad) . 'css/styles.css';
         // Referencias a elementos del DOM
         const sidebarToggle = document.getElementById('sidebarToggle');
         const sidebar = document.getElementById('sidebar');
-        const closeSidebar = document.querySelector('.close-sidebar');
+        const closeSidebar = document.querySelector('.boton-cerrar-menu');
         
         // Creo overlay para fondo oscuro al abrir menú
         const overlay = document.createElement('div');
-        overlay.className = 'sidebar-overlay';
+        overlay.className = 'overlay-menu-movil';
         document.body.appendChild(overlay);
     
         // Función para alternar la visibilidad del sidebar
@@ -100,7 +106,7 @@ $rutaCss = str_repeat('../', $profundidad) . 'css/styles.css';
         overlay.addEventListener('click', toggleSidebar);
     
         // En móvil, cerrar sidebar al hacer clic en un enlace
-        document.querySelectorAll('.sidebar .nav-link').forEach(link => {
+        document.querySelectorAll('.menu-lateral-admin .enlace-menu-lateral').forEach(link => {
             link.addEventListener('click', () => {
                 window.innerWidth < 992 && toggleSidebar();
             });

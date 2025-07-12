@@ -1,38 +1,41 @@
-/* 4.4 Formularios */
-.form-control {
+/* ====================================================
+   4.4 FORMULARIOS E INPUTS
+   ==================================================== */
+
+.campo-formulario {
     border: 2px solid #f28c38;
     padding: 10px 15px;
     font-size: 16px;
     border-radius: 10px;
 }
 
-input.form-control:focus {
+input.campo-formulario:focus {
     border-color: #e76f51;
     box-shadow: 0 0 0 0.15rem rgba(231, 111, 81, 0.25);
 }
 
-.requirements-list {
+.lista-requisitos-password {
     list-style: none;
     padding-left: 0;
 }
 
-.requirements-list li {
+.lista-requisitos-password li {
     padding: 3px 0;
 }
 
-.requirements-list li::before {
+.lista-requisitos-password li::before {
     content: '❌';
     margin-right: 5px;
 }
 
-.requirements-list li.valid::before {
+.lista-requisitos-password li.valido::before {
     content: '✅';
 }
 
-.invalid {
+.campo-invalido {
     color: #dc3545;
 }
 
-.valid {
+.campo-valido {
     color: #198754;
 }

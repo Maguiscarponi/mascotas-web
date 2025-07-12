@@ -1,14 +1,19 @@
-/* 4.1 Botones */
+/* ====================================================
+   4. BOTONES Y ACCIONES
+   ==================================================== */
 
-.btn-registrate {
+/* Botón de registro */
+.boton-registrarse {
     border: 2px solid #f28c38;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
-.btn-registrate:hover {
+.boton-registrarse:hover {
     background-color: #f6886c;
 }
-.btn-tarjetasindex {
+
+/* Botones de tarjetas en index */
+.boton-tarjeta-inicio {
     background-color: #e76f51;
     color: white;
     border: none;
@@ -17,27 +22,13 @@
     border-radius: 25px;
 }
 
-.btn-tarjetasindex:hover {
+.boton-tarjeta-inicio:hover {
     background-color: #d45d3c;
     color: white;
 }
 
-.btn-mascotapublicacion {
-    background-color: #e76f51;
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    font-weight: 500;
-    display: inline-block;
-    border-radius: 25px;
-}
-
-.btn-mascotapublicacion:hover {
-    background-color: #d45d3c;
-    color: white;
-}
-
-.btn-donar {
+/* Botón para publicaciones de mascotas */
+.boton-mascota-publicacion {
     background-color: #e76f51;
     color: white;
     border: none;
@@ -47,44 +38,62 @@
     border-radius: 25px;
 }
 
-.btn-donar:hover {
+.boton-mascota-publicacion:hover {
     background-color: #d45d3c;
     color: white;
 }
 
-.btn-nueva,
-.btn-publicar {
+/* Botón de donación */
+.boton-donar {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.boton-donar:hover {
+    background-color: #d45d3c;
+    color: white;
+}
+
+/* Botones administrativos */
+.boton-nueva-mascota,
+.boton-publicar-mascota {
     background-color: #e76f51;
     color: white;
 }
 
-.btn-nueva:hover,
-.btn-publicar:hover {
+.boton-nueva-mascota:hover,
+.boton-publicar-mascota:hover {
     background-color: #d45d3c;
     color: white;
 }
 
-.btn-editar {
+.boton-editar-mascota {
     background-color: rgb(33, 133, 66);
     color: white;
 }
 
-.btn-editar:hover {
+.boton-editar-mascota:hover {
     background-color: rgb(28, 119, 57);
     color: white;
 }
 
-.btn-eliminar {
+.boton-eliminar-mascota {
     background-color: #DC3545;
     color: white;
 }
 
-.btn-eliminar:hover {
+.boton-eliminar-mascota:hover {
     background-color: #c82333;
     color: white;
 }
 
-.btn-login {
+/* Botón de login */
+.boton-iniciar-sesion {
     background-color: #e76f51;
     color: white;
     border: none;
@@ -94,6 +103,6 @@
     border-radius: 25px;
 }
 
-.btn-login:hover {
+.boton-iniciar-sesion:hover {
     background-color: #e08c4c;
 }

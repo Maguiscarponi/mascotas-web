@@ -1,8 +1,9 @@
 /* ====================================================
-   3. NAVEGACIÓN Y SIDEBAR
+   3. NAVEGACIÓN Y HEADER PRINCIPAL
    ==================================================== */
-/* Navbar */
-nav {
+
+/* Barra de navegación principal */
+.navbar-principal {
     background-color: #fff7f0;
     padding: 10px 30px;
     display: flex;
@@ -11,7 +12,7 @@ nav {
     border-bottom: 1px solid #eee;
 }
 
-nav a {
+.navbar-principal a {
     color: #6a4e42;
     font-weight: 500;
     text-decoration: none;
@@ -19,13 +20,13 @@ nav a {
     padding: 6px 12px;
 }
 
-nav a:hover {
+.navbar-principal a:hover {
     background-color: #e76f5120;
     color: #e76f51;
 }
 
-nav ul,
-nav .navbar-nav {
+.navbar-principal ul,
+.navbar-principal .navbar-nav {
     display: flex;
     justify-content: center;
     flex: 1;

@@ -1,5 +1,8 @@
-/* 5.2 Donaciones */
-.donacion-hero {
+/* ====================================================
+   5.2 PÁGINA DE DONACIONES
+   ==================================================== */
+
+.hero-donacion {
     background-image: url('../uploads/fondo_donacion.png');
     background-size: cover;
     background-position: center;
@@ -7,7 +10,7 @@
     position: relative;
 }
 
-.donacion-overlay {
+.overlay-donacion {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,24 +23,24 @@
     border-radius: 8px;
 }
 
-.donacion-overlay h1 {
+.overlay-donacion h1 {
     font-size: 32px;
     color: #fff;
     margin-bottom: 8px;
 }
 
-.donacion-overlay p {
+.overlay-donacion p {
     font-size: 16px;
     color: #ddd;
 }
 
-.donacion-hero-img {
+.imagen-hero-donacion {
     position: relative;
     width: 100%;
     margin-bottom: 32px;
 }
 
-.donacion-hero-img .hero-img {
+.imagen-hero-donacion .hero-img {
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -45,7 +48,7 @@
     display: block;
 }
 
-.donacion-titulo {
+.titulo-donacion {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,13 +63,13 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.donacion-titulo h1 {
+.titulo-donacion h1 {
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
-.donacion-titulo p {
+.titulo-donacion p {
     font-size: 16px;
     margin: 0;
 }

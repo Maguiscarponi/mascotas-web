@@ -8,14 +8,21 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : '';
 ?>
 
 <div class="container mt-4">
+    
     <!-- Formulario de filtros -->
     <form method="GET" class="row g-3 mb-4">
+        
+        <!-- Campo nombre -->
         <div class="col-md-4">
-            <input type="text" name="nombre" class="form-control" placeholder="Nombre" value="<?php echo htmlspecialchars($nombre); ?>">
+            <input type="text" name="nombre" class="campo-formulario form-control" placeholder="Nombre" value="<?php echo htmlspecialchars($nombre); ?>">
         </div>
+        
+        <!-- Campo edad -->
         <div class="col-md-4">
-            <input type="text" name="edad" class="form-control" placeholder="Edad" value="<?php echo htmlspecialchars($edad); ?>">
+            <input type="text" name="edad" class="campo-formulario form-control" placeholder="Edad" value="<?php echo htmlspecialchars($edad); ?>">
         </div>
+        
+        <!-- Selector tipo -->
         <div class="col-md-3">
             <select name="tipo" class="form-select">
                 <option value="">Todos</option>
@@ -23,9 +30,12 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : '';
                 <option value="Gato" <?php if (strtolower($tipo) == 'gato') echo 'selected'; ?>>Gato</option>
             </select>
         </div>
+        
+        <!-- Botón filtrar -->
         <div class="col-md-1 text-end">
             <button type="submit" class="btn btn-filtrar w-100">Filtrar</button>
         </div>
+        
     </form>
 
     <!-- Listado de mascotas -->
@@ -57,25 +67,34 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : '';
         if ($result && $result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
         ?>
+        
+        <!-- Tarjeta de mascota -->
         <div class="col">
-            <div class="card card-adopcion">
+            <div class="tarjeta-base tarjeta-adopcion">
                 <a href="detalle_mascota.php?id=<?php echo $row['id_mascota']; ?>" class="text-decoration-none">
-                    <img class="mascota-imagen" src="<?php echo '../' . $row['imagen']; ?>" alt="<?php echo $row['nombre']; ?>">
-                    <div class="card-body">
+                    
+                    <!-- Imagen de la mascota -->
+                    <img class="imagen-mascota-tarjeta" src="<?php echo '../' . $row['imagen']; ?>" alt="<?php echo $row['nombre']; ?>">
+                    
+                    <!-- Información de la mascota -->
+                    <div class="cuerpo-tarjeta">
                         <h5 class="card-title"><?php echo $row['nombre']; ?></h5>
                         <p class="card-text"><?php echo $row['edad']; ?></p>
                         
+                        <!-- Botón según tipo de publicación -->
                         <?php if ($tipoPublicacion == 'Adopción'): ?>
-                            <button class="btn btn-mascotapublicacion">Adoptar</button>
+                            <button class="btn boton-mascota-publicacion">Adoptar</button>
                         <?php elseif ($tipoPublicacion == 'Tránsito'): ?>
-                            <button class="btn btn-mascotapublicacion">Dar tránsito</button>
+                            <button class="btn boton-mascota-publicacion">Dar tránsito</button>
                         <?php elseif ($tipoPublicacion == 'Perdido'): ?>
-                            <button class="btn btn-mascotapublicacion">Consultar por <?php echo $row['nombre']; ?></button>
+                            <button class="btn boton-mascota-publicacion">Consultar por <?php echo $row['nombre']; ?></button>
                         <?php endif; ?>
                     </div>
+                    
                 </a>
             </div>
         </div>
+        
         <?php
             }
         } else {
@@ -83,4 +102,5 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : '';
         }
         ?>
     </div>
+    
 </div>

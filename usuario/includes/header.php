@@ -49,8 +49,10 @@ if (strpos($_SERVER['PHP_SELF'], 'chat/index.php') !== false && !isset($_GET['id
     <link href="/mascotas/css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <!-- Barra de navegación principal -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-principal">
         <div class="container-fluid">
+            
             <!-- Logo/Título según rol -->
             <?php if (isset($_SESSION['usuario_rol']) && $_SESSION['usuario_rol'] === 'admin'): ?>
                 <a class="navbar-brand" href="/mascotas/admin/index.php">Panel Administrador</a>
@@ -64,6 +66,7 @@ if (strpos($_SERVER['PHP_SELF'], 'chat/index.php') !== false && !isset($_GET['id
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
+                
                 <!-- Menú principal -->
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
@@ -104,6 +107,7 @@ if (strpos($_SERVER['PHP_SELF'], 'chat/index.php') !== false && !isset($_GET['id
                         <a class="btn btn-outline-danger" href="<?php echo $base_url; ?>auth/registro/registro.php">Registrarse</a>
                     <?php endif; ?>
                 </div>
+                
             </div>
         </div>
     </nav>
