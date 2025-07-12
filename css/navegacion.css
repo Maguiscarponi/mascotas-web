@@ -1,0 +1,35 @@
+/* ====================================================
+   3. NAVEGACIÓN Y SIDEBAR
+   ==================================================== */
+/* Navbar */
+nav {
+    background-color: #fff7f0;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+nav a {
+    color: #6a4e42;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 12px;
+}
+
+nav a:hover {
+    background-color: #e76f5120;
+    color: #e76f51;
+}
+
+nav ul,
+nav .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

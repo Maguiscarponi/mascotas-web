@@ -1,0 +1,124 @@
+/* ====================================================
+   ESTILOS PARA INDEX.PHP - PÁGINA PRINCIPAL
+   ==================================================== */
+
+/* Sección principal con imagen de fondo */
+.seccion-principal {
+    position: relative;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.imagen-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.texto-principal h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.texto-principal p {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Tarjetas de servicios principales */
+.tarjeta-servicio {
+    border: none;
+    background: #fff7f0;
+    border-top: 5px solid transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.tarjeta-servicio-cuerpo {
+    padding: 15px;
+    text-align: center;
+}
+
+.icono-servicio {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.titulo-servicio {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.descripcion-servicio {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Colores específicos de tarjetas de servicios */
+.tarjeta-servicio-transito {
+    border-top-color: #f7b267;
+}
+
+.tarjeta-servicio-perdidas {
+    border-top-color: #ee6c4d;
+}
+
+.tarjeta-servicio-reportar {
+    border-top-color: #f4a261;
+}
+
+.tarjeta-servicio-donacion {
+    border-top-color: #b56576;
+}
+
+.tarjeta-servicio-adopcion {
+    border-top-color: #e76f51;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .texto-principal h1 {
+        font-size: 29px;
+    }
+
+    .texto-principal p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .seccion-principal {
+        height: 250px;
+    }
+
+    .texto-principal {
+        padding: 10px;
+    }
+
+    .texto-principal h1 {
+        font-size: 24px;
+    }
+
+    .texto-principal p {
+        font-size: 15px;
+    }
+}

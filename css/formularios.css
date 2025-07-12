@@ -1,0 +1,38 @@
+/* 4.4 Formularios */
+.form-control {
+    border: 2px solid #f28c38;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+input.form-control:focus {
+    border-color: #e76f51;
+    box-shadow: 0 0 0 0.15rem rgba(231, 111, 81, 0.25);
+}
+
+.requirements-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.requirements-list li {
+    padding: 3px 0;
+}
+
+.requirements-list li::before {
+    content: '❌';
+    margin-right: 5px;
+}
+
+.requirements-list li.valid::before {
+    content: '✅';
+}
+
+.invalid {
+    color: #dc3545;
+}
+
+.valid {
+    color: #198754;
+}

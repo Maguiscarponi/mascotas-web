@@ -1,0 +1,18 @@
+/* ====================================================
+   ARCHIVO CSS PRINCIPAL 
+   ==================================================== */
+
+/* Acá importo todos los archivos CSS específicos */
+@import url('botones.css');
+@import url('chat.css');
+@import url('donaciones.css');
+@import url('filtros.css');
+@import url('formularios.css');
+@import url('general.css');
+@import url('login.css');
+@import url('movil.css');
+@import url('navegacion.css');
+@import url('seccionesp.css');
+@import url('sidebar.css');
+@import url('tablas.css');
+@import url('tarjetas.css');

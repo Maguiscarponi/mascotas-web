@@ -1,0 +1,25 @@
+/* 4.3 Tablas */
+
+.gestion-solicitudes .card{
+    background-color: white;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table-solicitudes {
+    background-color: white;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.table-solicitudes th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.table-solicitudes td {
+    padding: 12px;
+}

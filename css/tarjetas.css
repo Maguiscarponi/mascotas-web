@@ -1,0 +1,204 @@
+/* 4.2 Tarjetas */
+.card {
+    border: none;
+    background: #fff7f0;
+    border-top: 5px solid transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.card-text {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Colores de las tarjetas del inicio */
+.card-transito {
+    border-top-color: #f7b267;
+}
+
+.card-perdidas {
+    border-top-color: #ee6c4d;
+}
+
+.card-reportar {
+    border-top-color: #f4a261;
+}
+
+.card-donacion {
+    border-top-color: #b56576;
+}
+
+.card-donacion-personalizada {
+    background-color: #fff7f0;
+    border-top: 5px solid #e76f51;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-donacion-personalizada h3 {
+    color: #e76f51;
+}
+
+.card-donacion-personalizada .icon-container i {
+    font-size: 30px;
+    color: #e76f51;
+}
+
+/* Tarjetas de mascota */
+.card-mascota {
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    margin-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-mascota .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #e76f51;
+    text-align: center;
+}
+
+.card-mascota .card-text {
+    font-size: 16px;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-mascota .btn-adoptar {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: 500;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-mascota .mascota-imagen {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-adopcion .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #e76f51;
+    text-align: center;
+}
+
+.card-adopcion .card-text {
+    font-size: 16px;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-adopcion .btn-adoptar {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-weight: 500;
+    margin: 0 auto;
+    display: block;
+    border-radius: 25px;
+}
+
+.mascota-card {
+    border-radius: 10px;
+    background: white;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.mascota-imagen {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.mascota-info {
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+.detalle-mascota-container {
+    margin-top: 20px;
+}
+
+.detalle-mascota-imagen {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detalle-mascota-card {
+    height: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-mascota-card .card-header {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+}
+
+.detalle-mascota-card .card-header h4 {
+    margin: 0;
+    font-weight: bold;
+    color: #1B4965;
+}
+
+.detalle-mascota-card .table-borderless th {
+    width: 130px;
+    color: #666;
+    padding: 15px 20px;
+}
+
+.detalle-mascota-card .table-borderless td {
+    padding: 15px 20px;
+}
+
+.detalle-mascota-card .btn-primary {
+    background-color: #e76f51;
+    border-color: #e76f51;
+    padding: 12px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.detalle-mascota-card .btn-primary:hover {
+    background-color: #d45d3c;
+    border-color: #d45d3c;
+}

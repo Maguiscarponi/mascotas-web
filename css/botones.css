@@ -1,0 +1,99 @@
+/* 4.1 Botones */
+
+.btn-registrate {
+    border: 2px solid #f28c38;
+    border-radius: 10px
+}
+
+.btn-registrate:hover {
+    background-color: #f6886c;
+}
+.btn-tarjetasindex {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+.btn-tarjetasindex:hover {
+    background-color: #d45d3c;
+    color: white;
+}
+
+.btn-mascotapublicacion {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.btn-mascotapublicacion:hover {
+    background-color: #d45d3c;
+    color: white;
+}
+
+.btn-donar {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.btn-donar:hover {
+    background-color: #d45d3c;
+    color: white;
+}
+
+.btn-nueva,
+.btn-publicar {
+    background-color: #e76f51;
+    color: white;
+}
+
+.btn-nueva:hover,
+.btn-publicar:hover {
+    background-color: #d45d3c;
+    color: white;
+}
+
+.btn-editar {
+    background-color: rgb(33, 133, 66);
+    color: white;
+}
+
+.btn-editar:hover {
+    background-color: rgb(28, 119, 57);
+    color: white;
+}
+
+.btn-eliminar {
+    background-color: #DC3545;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333;
+    color: white;
+}
+
+.btn-login {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.btn-login:hover {
+    background-color: #e08c4c;
+}

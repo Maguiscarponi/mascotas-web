@@ -1,0 +1,145 @@
+/* Para tablets */
+@media (max-width: 991px) {
+    /* ajustes del sidebar */
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar.active {
+        display: block;
+    }
+
+    .close-sidebar {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    /* ajuste del contenido principal */
+    .content {
+        margin-left: 0;
+        padding-top: 60px;
+    }
+
+    /* ajustes de tabla */
+    .table-responsive {
+        margin-top: 20px;
+    }
+
+    .table td,
+    .table th {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .table .btn {
+        padding: 5px 10px;
+        font-size: 13px;
+        margin: 2px;
+    }
+
+    /* ajustes de botones */
+    .btn-nueva {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    /* ajustes del hero */
+    .hero-section {
+        height: 300px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 19px;
+    }
+}
+
+/* PARTE MÓVIL */
+@media (max-width: 768px) {
+    /* ajustes para pantallas medianas */
+    .hero-text h1 {
+        font-size: 29px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-image {
+        height: 300px;
+        width: 100%;
+    }
+    
+    .login-form {
+        width: 100%;
+    }
+}
+
+/* Para celulares chicos */
+@media (max-width: 576px) {
+    /* ajustes para celulares */
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-text {
+        padding: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+
+    /* ajustes de tabla para celulares */
+    .table th:nth-child(2),
+    .table td:nth-child(2),
+    .table th:nth-child(4),
+    .table td:nth-child(4) {
+        display: none;
+    }
+
+    /* botones en tabla */
+    .table .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .card .btn {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .card-body {
+        padding: 16px 12px;
+    }
+
+    .detalle-mascota-imagen {
+        height: 300px;
+    }
+
+    .detalle-mascota-card {
+        height: auto;
+    }
+
+    .btn-donar {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+    }
+}
