@@ -46,13 +46,13 @@ input.campo-formulario:focus {
    ==================================================== */
 
 .contenedor-formulario-principal {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
 }
 
 .tarjeta-formulario-principal {
-    background-color: #fff;
+    background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -75,88 +75,27 @@ input.campo-formulario:focus {
     padding: 30px;
 }
 
-.fila-formulario-principal {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.columna-formulario-principal {
-    flex: 1;
-}
-
-.grupo-campo-formulario {
-    margin-bottom: 20px;
-}
-
-.etiqueta-formulario-principal {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #333;
-}
-
-.input-formulario-principal {
-    width: 100%;
-    padding: 12px 15px;
+.cuerpo-formulario-principal .form-control {
     border: 2px solid #e0e0e0;
     border-radius: 8px;
+    padding: 12px 15px;
     font-size: 16px;
-    transition: border-color 0.3s;
 }
 
-.input-formulario-principal:focus {
-    outline: none;
+.cuerpo-formulario-principal .form-control:focus {
     border-color: #e76f51;
     box-shadow: 0 0 0 3px rgba(231, 111, 81, 0.1);
 }
 
-.input-formulario-principal[readonly] {
+.cuerpo-formulario-principal .form-control[readonly] {
     background-color: #f8f9fa;
     color: #666;
 }
 
-/* Grupos de radio buttons */
-.grupo-radio-formulario {
-    display: flex;
-    gap: 15px;
-    margin-top: 8px;
-}
-
-.opcion-radio-formulario {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.radio-formulario-principal {
-    margin: 0;
-}
-
-.etiqueta-radio-formulario {
-    margin: 0;
-    font-weight: normal;
-    cursor: pointer;
-}
-
-/* Grupo de radio buttons verticales */
-.grupo-radio-vertical {
-    margin-top: 8px;
-}
-
-.opcion-radio-vertical {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.cuerpo-formulario-principal .form-label {
+    font-weight: 500;
+    color: #333;
     margin-bottom: 8px;
-}
-
-/* Botones del formulario */
-.contenedor-botones-formulario {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
 }
 
 .boton-enviar-formulario {
@@ -167,58 +106,32 @@ input.campo-formulario:focus {
     font-size: 16px;
     font-weight: 500;
     border-radius: 25px;
-    cursor: pointer;
     margin-right: 15px;
-    transition: background-color 0.3s;
 }
 
 .boton-enviar-formulario:hover {
     background-color: #d45d3c;
 }
 
-.boton-cancelar-formulario {
-    background-color: #6c757d;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 25px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s;
+/* Radio buttons mejorados */
+.cuerpo-formulario-principal input[type="radio"] {
+    margin-right: 8px;
+    margin-left: 15px;
 }
 
-.boton-cancelar-formulario:hover {
-    background-color: #5a6268;
-    color: white;
-    text-decoration: none;
+.cuerpo-formulario-principal input[type="radio"]:first-child {
+    margin-left: 0;
 }
 
-/* Responsive para móviles */
+/* Responsive */
 @media (max-width: 768px) {
-    .fila-formulario-principal {
-        flex-direction: column;
-        gap: 0;
-    }
-    
-    .grupo-radio-formulario {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
     .cuerpo-formulario-principal {
         padding: 20px;
     }
     
-    .contenedor-botones-formulario {
-        text-align: center;
-    }
-    
-    .boton-enviar-formulario,
-    .boton-cancelar-formulario {
+    .boton-enviar-formulario {
         width: 100%;
-        margin: 5px 0;
+        margin-bottom: 10px;
+        margin-right: 0;
     }
 }
